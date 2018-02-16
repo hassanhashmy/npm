@@ -596,6 +596,6 @@ nodp=$(node --version |grep v |wc -l)
          fi
 
 
-echo -e "\033[30;5;43mScript Execution is Completed....This is Last line...Server is rebooting now...Please check\033[0m";
+echo -e "\033[30;5;43mScript Execution is Completed....This is Last line...You can Reboot the Server  now...Please check\033[0m";
 #reboot				
 exit 0
