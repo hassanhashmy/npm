@@ -568,6 +568,7 @@ nodp=$(node --version |grep v |wc -l)
 			
     then
             #SOME COMMANDS; sleep 600
+			apt install procps -y >> /root/deploy.log  2>&1
             echo "Node Js Verified";
             echo "Now checking all the services is installed";
             echo "#1";  ps waux | grep nginx
