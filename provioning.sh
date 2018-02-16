@@ -14,9 +14,6 @@
 
 
 
-# Ubuntu Release check if the release is 16.04 then script will continue otherwise it will return exit 1
-rel=$(lsb_release -a |head -n3 |tail -n1  | awk  '{print $2}')
-# This command will check installed php version
 
 
 #####################################################################################################################
@@ -25,6 +22,8 @@ rel=$(lsb_release -a |head -n3 |tail -n1  | awk  '{print $2}')
 
 #1 #######################################
 # This statement will only check that OS version otherwise exit the script
+# Ubuntu Release check if the release is 16.04 then script will continue otherwise it will return exit 1
+rel=$(lsb_release -a |head -n3 |tail -n1  | awk  '{print $2}')
 
         if [ "$rel" = "16.04" ];
     then
